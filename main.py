@@ -1,25 +1,25 @@
 ###Emanuel###
 
-#Importing things.
+#Importing stuff
 import sys
 import os
 import time
 
-#Function that clears the terminal/console.
+#Function that clears the terminal
 def clear():
     os.system('cls||clear')
 
-#Clearing the terminal.
+#Clearing the terminal
 clear()
 
-#Opening message. This is the first line the user will see.
+#Opening message. This is the main line that people will get to read
 print("Welcome!\n")
 
-#Asking the user for input.
+#Asking the user for input
 text = input("Please enter the word \"continue\" to continue: ")
 
-#If the user entered the word "continue" the program will continue. If not. The user will be prompted to state it again.
-#This is an endless loop unless the user actually enters the correct input which is "continue".
+#If the user entered the word "continue" the script will continue. If not then the user will be prompted to state it again.
+#This is an endless loop unless the user actually enters the correct input which is "continue"
 if text == "continue" or text == "Continue":
     clear()
 else:
@@ -30,7 +30,7 @@ else:
         else:
             pass
 
-#Clearing the terminal.
+#Clearing the terminal
 clear()
 
 #This part simply explains what the program does. The user will once again have to enter the word "continue" to go on.
@@ -48,20 +48,20 @@ else:
         else:
             pass
 
-#Clearing the terminal.
+#Clearing the terminal
 clear()
 
 
-#The main loop that goes on forever.
+#The main loop that loops forever
 while True:
-    #Taking input from user.
+    #Taking input from user
     text = input("Enter a string that you would like me to analyze: ")
 
-    #Checking what the first and last characters are.
+    #Checking what the first and last characters are in the input
     value_1 = text[0]
     value_2 = text[-1]
 
-    #Checking if first and last characters in the string are the same.
+    #Checking if first and last characters in the string are the same
     if value_1 == value_2:
         print("\nThe first character is the same as the last character!")
     else:
